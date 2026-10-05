@@ -2,3 +2,7 @@
 set -euo pipefail
 DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
 echo "dotfiles: install.sh ran from $DOTFILES_DIR"
+
+mkdir -p "$HOME/.config/stay"
+ln -sfn "$DOTFILES_DIR/stay/layout.yaml" "$HOME/.config/stay/layout.yaml"
+echo "dotfiles: linked STAY layout"
