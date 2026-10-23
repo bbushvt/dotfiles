@@ -2,6 +2,7 @@ terminals:
   - id: claude-code
     name: Claude Code
     command: /home/coder/.local/bin/claude --dangerously-skip-permissions
+    wait_for: /home/coder/.local/bin/claude
   - id: shell1
     name: Shell 1
   - id: shell2
